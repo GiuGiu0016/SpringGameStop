@@ -21,17 +21,21 @@ public class VideoGioco {
 	
 	@Enumerated(EnumType.STRING)
 	public CategoriaVideogioco categoria;
+		
+	public VideoGioco() {
+			
+	}
 	
-	public VideoGioco(String titolo, double prezzo, ClassificazionePegi pegi, CategoriaVideogioco categoria) {
+	public VideoGioco(Long id,String titolo, double prezzo, ClassificazionePegi pegi, CategoriaVideogioco categoria) {
 		super();
+		this.id = id;
 		this.titolo = titolo;
 		this.prezzo = prezzo;
 		this.pegi = pegi;
 		this.categoria = categoria;
 	}
 
-	public VideoGioco() {
-	}
+
 
 	public String getTitolo() {
 		return titolo;

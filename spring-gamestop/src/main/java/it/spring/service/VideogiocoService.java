@@ -31,8 +31,8 @@ public class VideogiocoService {
 		repo.deleteById(id);
 	}
 	
-//	public List<VideoGioco> search(String keyword) {
-//		return repo.search(keyword);
-//	}
+	public List<VideoGioco> search(String keyword) {
+		return repo.search(keyword);
+	}
 	
 }

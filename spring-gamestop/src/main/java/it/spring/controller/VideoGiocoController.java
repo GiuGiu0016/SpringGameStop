@@ -55,11 +55,11 @@ public class VideoGiocoController {
 		return "redirect:/";		
 	}
 	
-//	@RequestMapping("/search")
-//	public ModelAndView search(@RequestParam String keyword) {
-//		List<VideoGioco> result = videogiocoService.search(keyword);
-//		ModelAndView mav = new ModelAndView("search");
-//		mav.addObject("result", result);
-//		return mav;		
-//	}	
+	@RequestMapping("/search")
+	public ModelAndView search(@RequestParam String keyword) {
+		List<VideoGioco> result = videogiocoService.search(keyword);
+		ModelAndView mav = new ModelAndView("search");
+		mav.addObject("result", result);
+		return mav;		
+	}	
 }
